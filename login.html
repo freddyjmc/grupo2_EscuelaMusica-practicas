@@ -1,0 +1,51 @@
+
+<head>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css\logreg.css">
+    <title>FORMULARIO DE INICIO DE SESION</title>
+</head>
+
+<body>
+<!--FORMULARIO SECUNDARIO, APARECE AL HACER CILCK EN INICIAR SESION EN EL INICIAL-->
+<!--Contenedor Saludo e Invitacion a Registrarse secundaria--> 
+<section class="container-form login" id="login">
+    <div class="information">
+        <div class="info-childs">
+            <h2>¡Nos alegra verte de nuevo!</h2>
+            <p>¡Armonia,Tu escuela de Musica! </p>
+                </label for="terms-and-conditions"><input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline"/>Acepto los<a href="  /">Terminos y condiciones </a>  
+                    <input type="button" value="Registrarse" id="sign-up">
+                    <p class="validation-message"></p>
+        </div>
+    </div>
+<!--Contenedor Datos para Inicio de Sesion--> 
+    <div class="form-information">
+        <div class="form-information-childs">
+            <h2>¡Hola !</h2>
+            <p>Inicia Sesion</p>
+            <div class="icons">
+                <i class='bx bxl-google'></i>
+                <i class='bx bxl-facebook'></i>
+                <i class='bx bxl-instagram-alt'></i>
+            </div>
+            <p> o usa una cuenta para iniciar sesion</p>
+            <form class="form">
+                <label>
+                    <i class='bx bx-envelope'></i>
+                    <input type="email" placeholder="email" name="email" requiered>
+                    <p class="validation-message"></p>
+                </label>
+                <label>
+                    <i class='bx bx-lock'></i>
+                    <input type="password" placeholder="Contraseña" name="password" requiered>
+                    <p class="validation-message"></p>
+                </label>
+                    <input type="submit" value="Iniciar Sesion" id="sign-up" >
+                    <p class="validation-message"></p>
+            </form>
+    </div>
+</section>
+</body>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela de Música - Inicio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a la Escuela de Música</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('frontend_bp.enrollments') }}">Inscripciones</a></li>
+                <li><a href="{{ url_for('frontend_bp.instruments') }}">Instrumentos</a></li>
+                <li><a href="{{ url_for('frontend_bp.levels') }}">Niveles</a></li>
+                <li><a href="{{ url_for('frontend_bp.students') }}">Estudiantes</a></li>
+                <li><a href="{{ url_for('frontend_bp.teachers') }}">Profesores</a></li>
+                <li><a href="{{ url_for('frontend_bp.login') }}">Iniciar Sesión</a></li>
+                <li><a href="{{ url_for('frontend_bp.register') }}">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Bienvenida a tu aplicación</h2>
+        <p>Bienvenida Mar.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Escuela de Música. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

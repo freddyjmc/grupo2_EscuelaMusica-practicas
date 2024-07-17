@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela de Música - Inicio</title>
+    <!--<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    
+    
+</head>
+<body>
+    <header  class="header">
+        <nav class="menu">
+            <img src="img\logo1.png" alt="Logo">
+            <div class="header-text">
+                <h1>Escuela de Musica Armonia</h1>
+                <p>Bienvenidos</p>
+            </div>
+            <ul>
+                <li><a href="{{ url_for('frontend_bp.enrollments') }}">Inscripciones</a></li>
+                <li><a href="{{ url_for('frontend_bp.instruments') }}">Instrumentos</a></li>
+                <li><a href="{{ url_for('frontend_bp.levels') }}">Niveles</a></li>
+                <li><a href="{{ url_for('frontend_bp.students') }}">Estudiantes</a></li>
+                <li><a href="{{ url_for('frontend_bp.teachers') }}">Profesores</a></li>
+                <li><a href="{{ url_for('frontend_bp.login') }}">Iniciar Sesión</a></li>
+                <li><a href="{{ url_for('frontend_bp.register') }}">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <!-- Sección del Banner -->
+        <section>
+            <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/femaleplaying.jpg" class="d-block w-100 carousel-image" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Aprendizaje Musical Personalizado</h5>
+                                <p>Clases diseñadas para ti, porque cada estudiante es único.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/grupoadolescentes.jpg" class="d-block w-100 carousel-image" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Desarrollo de Talento</h5>
+                                <p>Descubre y potencia tu talento musical con nosotros.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/musicalinstruments.jpg" class="d-block w-100 carousel-image" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Experiencia Educativa Integral</h5>
+                                <p>Más que una escuela, somos tu comunidad de aprendizaje musical</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    
+        <h2>Bienvenida a tu aplicación</h2>
+        <p>Bienvenida Mar.</p>
+    </main>
+    
+    
+    
+    <!--PIE DE PAGINA-->
+    <footer class="pie-pagina">
+        <div class="bottom-menu">
+            <img src="img\logo1.png" alt="logo">
+            <div class="resources">
+                <h4>RECURSOS</h4>
+                <ul>
+                    <li>Sobre nosotros</li>
+                    <li>Contacto</li>
+                    <li>FAQ</li>
+                    <li>Política de devoluciones</li>
+                    <li>Política de privacidad</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+            <div class="virtual-shop">
+                <h4>SIGUENOS</h4>
+                <ul class="rrss">
+                    <li>
+                        <a href="#">
+                            <span><i class="fa-brands fa-whatsapp fa-2x"></i></span>
+                           <p class="virtual-text">+666 66 66 66</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span><i class="fa-brands fa-instagram fa-2x"></i></span>
+                           <p class="virtual-text"> @Armonia_em</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span><i class="fa-brands fa-twitter fa-2x"></i></span>
+                            <p class="virtual-text">@Armonia_em</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span><i class="fa-brands fa-facebook fa-2x"></i></span>
+                           <p class="virtual-text">@Armonia_em</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="newsletter">
+                <h4>BOLETÍN DE NOTICIAS</h4>
+                <p>¡Siempre al dia con noticias y novedades musicales! </p>
+                <form action="suscripcion.php" method="post">
+                <input type="email" name="email" placeholder="Tu correo electrónico">
+                <input type="submit" value="Suscribirse">
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
